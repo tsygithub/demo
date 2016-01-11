@@ -1,0 +1,29 @@
+/*首页*/
+body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";}
+label.time{margin-left:10px;margin-right:5px}
+button.btn.btn-default{background-color:#fff}
+button.btn.btn-default.active,button.btn.btn-default:hover {background-color:#ddd}
+
+/*报表*/
+.time1{height:44px;background-color:#fff;-moz-border-radius: 5px;border-radius: 5px;padding-top:5px;}
+.contenttitle{height:44px;padding:15px;margin-bottom:15px}
+.time1 .input-group{padding-left:3px;width:228px}
+.time1 .input-group .col-md-3{width:21%;}
+#form1{position:absolute;top:8px;left:260px}
+.select1{width:180px;height:30px}
+
+/*域名*/
+.domain_box{margin:10px 0 20px 8px;min-height:741px;background:#fff;}
+.d_header{height: 110px;background-color:#dddddd;padding:15px 10px}
+.d_body{height:90%;padding:10px 10px 20px 25px}
+.d_header .form-control{-moz-border-radius: 3px;border-radius: 3px;}
+.d_header .form-inline .form-control {width:15%;}
+.d_header .form-inline {margin-bottom:10px}
+div.dataTables_wrapper{font-size:12px;}
+.dataTables_length{float:left;margin-top:10px;}
+div.dataTables_wrapper div.dataTables_length label{font-weight:bold}
+div.dataTables_wrapper div.dataTables_info{padding-top: 16px;margin-left: 30px;float: left;}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination{margin-top:12px}
+table span{display:inline-block;width:50px;background:#33CC66;color:#fff;margin-left:2px;text-align:center;margin-bottom:2px}
+table .glyphicon{width:10px;cursor:pointer;}
+#addtag{background-color: #fff;color: #33cc66;margin-left: 5px;}
