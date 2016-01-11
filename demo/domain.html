@@ -148,16 +148,18 @@
 	$("#select").submit(function(){
 	   getDomain($('#select').serialize());
 	});
+	/*
 	$(".remove").each(function(){
 		$(this).on('click',function(){
 			$(this).parent().remove();
 		});
 	});
-	/*
-	$('document').on('click','.remove',function(){
+	*/
+	
+	$(document.body).on('click','.remove',function(){
 		$(this).parent().remove();
 	});
-	*/
+	
 	$("#tagbutton").click(function(){
 		console.log($("#maketag:input").val());
 		$('input[name="chkItem"]:checked').each(function(){
