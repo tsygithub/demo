@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>demo</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="css/_all-skins.min.css">
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">Demo</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Demo</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="active treeview">
+          <a href="index.html">
+            <i class="fa fa-dashboard"></i> <span>首页</span> 
+          </a>
+        <li class="treeview">
+          <a href="baobiao.html">
+            <i class="fa fa-files-o"></i>
+            <span>报表查询</span>
+            
+          </a>
+		</li>
+        <li class="treeview">
+          <a href="domain.html">
+            <i class="fa fa-pie-chart"></i>
+            <span>域名管理</span>
+           
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+       <i class="fa fa-dashboard"></i> <span>首页</span> 
+    </section>
+	<section  class="content">
+		<!-- /.row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box ">
+            <div class="box-header  with-border">
+              <h3 class="box-title"> <i class="fa fa-th"></i><span>推荐效果</span></h3>
+			   <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive">
+              <table id="table1" class="table table-bordered table-striped">
+				<thead>
+                <tr>
+                  <th></th>
+                  <th>推荐展示量</th>
+                  <th>点击量</th>
+                  <th>推荐贡献浏览量</th>
+                  <th>推荐投放点击量</th>
+				  <th>推荐投放点击率</th>
+                  <th>推荐展示点击率</th>
+                </tr>
+				</thead>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+      </div>
+      <!--趋势-->
+	  <div class="row">
+		<div class="col-xs-12">
+			<div class="box">
+			<div class="box-header with-border">
+              <h3 class="box-title"><i class="fa fa-th"></i><span>趋势分析</span></h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box-body" style="height:300px">
+               <form>
+					<label for="type" class="time">种类</label>
+					<select name="cars" class="select1">
+					<option value="推荐投放量">推荐投放量</option>
+					<option value="推荐贡献浏览量">推荐贡献浏览量</option>
+					<option value="推荐投放点击量">推荐投放点击量</option>
+					<option value="推荐展示量">推荐展示量</option>
+					</select>
+					  <label for="time" class="time">时间范围</label>
+					<div class="btn-group" role="group" aria-label="..." id="buttonclick">
+					  <button type="button" class="btn btn-default active" dataname="1">昨天</button>
+					  <button type="button" class="btn btn-default" dataname="2">前天</button>
+					  <button type="button" class="btn btn-default" dataname="3">最近七天</button>
+					</div>
+				</form>
+				<div id="indextu" style="height:250px"></div>
+            </div>
+            <!-- /.box-body -->
+			</div>
+		</div>
+	  </div>
+	  <!--推荐点击排行榜-->
+	  <div class="row">
+		<div class="col-xs-6">
+			<div class="box">
+			  <div class="box-header  with-border">
+              <h3 class="box-title"> <i class="fa fa-th"></i><span>推荐效果</span></h3>
+			  <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive">
+              <table id="index_click" class="table table-bordered table-striped">
+			    <thead>
+                <tr>
+                  <th width="43%">标题</th>
+                  <th width="19%">点击量</th>
+                  <th width="19%">展示量</th>
+                  <th width="19%">占比</th>
+
+                </tr>
+				</thead>
+              </table>
+            </div>
+            <!-- /.box-body -->
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="box">
+			  <div class="box-header  with-border">
+              <h3 class="box-title"> <i class="fa fa-th"></i><span>推荐效果</span></h3>
+			  <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive">
+              <table id="index_show" class="table table-bordered table-striped">
+                <tr>
+                  <th width="43%">标题</th>
+                  <th width="19%">点击量</th>
+                  <th width="19%">展示量</th>
+                  <th width="19%">占比</th>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+			</div>
+		</div>
+	  </div>
+	</section>
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2015-2016 <a href="http://www.gridsum.com/">GRIDSUM.</a>.</strong> All rights
+    reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.1.4 -->
+<script src="scripts/jQuery-2.1.4.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<!-- Bootstrap 3.3.5 -->
+<script src="scripts/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="scripts/app.min.js"></script>
+<script type="text/javascript" src="scripts/dist/echarts.js"></script>
+<script src="scripts/getIndex.js"></script>
+<script>
+$(function(){
+	$.ajax({
+			 url: "data/index.json",
+             type: "GET",            
+             dataType: "json",
+             success: function(data){
+						var html1="";
+						var html2="";
+						var html3="";
+						$.each(data.data1,function(i,n){ 						
+							html1 +="<tr><td>"+n['time']+"</td><td>"+n['putnum']+"</td><td>"+n['shownum']+"</td><td>"+n['clicknum']+"</td><td>"+n['clicknum']+"</td><td>"+n['bowernum']+"</td><td>"+n['showclick']+"</td></tr>"
+							}); 
+						$.each(data.data2,function(i,n){
+						    html2 +="<tr><td>"+n['title']+"</td><td>"+n['click']+"</td><td>"+n['show']+"</td><td>"+n['number']+"</td>";
+						 
+							});
+						$.each(data.data3,function(i,n){
+						    html3 +="<tr><td>"+n['title']+"</td><td>"+n['click']+"</td><td>"+n['show']+"</td><td>"+n['number']+"</td>";
+						 
+							});
+							$("#table1").append(html1);
+							var arr=['<span class="label label-success"></span>','<span class="label label-warning"></span>','<span class="label label-primary"></span>','<span class="label label-danger"></span>','<span class="label label-info"></span>'];
+							$("#table1 tr:eq(1) td:gt(4)").wrapInner(arr[0]);
+							$("#table1 tr:eq(2) td:gt(4)").wrapInner(arr[1]);
+							$("#table1 tr:eq(3) td:gt(4)").wrapInner(arr[2]);
+							$("#table1 tr:eq(4) td:gt(4)").wrapInner(arr[3]);
+							$("#index_click").append(html2);
+							var j=0;
+							$.each($("#index_click td:last-child"),function(i,n){
+							    $(n).wrapInner(arr[j]);
+		                        if(j<arr.length-1){
+								j++;
+								}else{
+								j=0;
+								}
+							});
+							$("#index_show").append(html3);
+							var k=0;
+							$.each($("#index_show td:last-child"),function(i,n){
+							    $(n).wrapInner(arr[k]);
+		                        if(k<arr.length-1){
+								k++;
+								}else{
+								k=0;
+								}
+							});
+                      },
+			error : function(textStatus, errorThrown) {
+　　			alert("系统ajax交互错误: " + textStatus);
+				console.log(textStatus);
+　　				}
+    }) ;
+	GetData($(".select1").val(),$("button[class$='active']").attr("dataname"));
+	$(".select1").change(function(){
+		GetData($(".select1").val(),$("button[class$='active']").attr("dataname"));		
+	});
+	$("#buttonclick button").each(function(){
+		$(this).click(function(){
+			$(this).parent().find("button").removeClass("active");
+			$(this).addClass("active");
+			GetData($(".select1").val(),$("button[class$='active']").attr("dataname"));
+		});
+	});
+});
+</script>
+</body>
+</html>
