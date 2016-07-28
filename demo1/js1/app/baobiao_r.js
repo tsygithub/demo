@@ -31,8 +31,14 @@ define(
 			$('#myModal').modal();
 		}
 	});
+	
+	
+	
 	$("#select2").change(function () {
 		GetBaobiao.getTypeData();
+		
+		
+		
 	});
 
 })
